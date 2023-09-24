@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.3s ease;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+.main-navbar {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.white {
+  font-size: 1.5;
+  font-weight: 600;
+  color: #ffffff;
+}
+.white:hover {
+  font-size: 1.5;
+  font-weight: 600;
+  color: #148831;
+}
+
+.flex {
+  padding: 10px 10%;
+  background: rgb(0, 0, 0);
+}
+.menu-btn {
+  display: none;
+}
+
+.cart-icons-shop {
+  background: transparent;
+  border: none;
+  display: flex;
+}
+.cart-qty {
+  position: relative;
+  top: -5px;
+  left: -8px;
+  padding: 0.1rem;
+  background: #fff;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+.shpping-01 {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.sm-menu {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .flex {
+    padding: 10px 5%;
+  }
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+  .sm-menu {
+    display: block;
+  }
+  .flex {
+    padding: 10px 5%;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .ul-lg {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    background: rgb(28, 175, 23);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.4rem;
+  }
+  .menu-btn:hover {
+    background: rgb(255, 255, 255);
+  }
+  .menu-icon {
+    margin-top: 3px;
+    font-size: 1.1rem;
+  }
+  .sm-nav {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.945));
+  }
+  .sm-ul {
+    flex-direction: column;
+    width: 80%;
+  }
+  .sm-li {
+    background: rgb(18, 160, 42);
+    color: white;
+    padding: 1rem;
+    border-radius: 5rem;
+  }
+  .sm-li:hover {
+    background: rgb(39, 39, 39);
+  }
+  .white-sm {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+
+/* ================================================================== */
+

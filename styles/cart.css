@@ -1,0 +1,145 @@
+.cart-main {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  padding: 0.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.966));
+}
+.cart-products {
+  margin-top: 4rem;
+  text-align: center;
+}
+.shopping-bag {
+  color: #838383;
+}
+.shopping-bag:hover {
+  color: #ffffff;
+}
+.shop-bag {
+  color: #838383;
+}
+.shop-bag:hover {
+  color: #ffffff;
+}
+.cart-btn{
+  margin-top: 2rem;
+  background: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+.cart-btn:hover{
+  background: rgb(14, 175, 76);
+}
+.cart-flex {
+  justify-content: center;
+  align-items: center;
+}
+.cart-button {
+  margin-top: 0.5rem;
+  background: #fff;
+  padding: 0.4em 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.3rem;
+  font-weight: 600;
+  border-radius: 1rem;
+}
+.your-cart{
+  color: red;
+}
+.cart-container-1 {
+  width: 100%;
+  margin: auto;
+}
+.cart-product-2 {
+  margin-top: 1.1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0.2rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.cart-2-img {
+  display: flex;
+  padding: 0.2rem;
+  background: rgb(14, 175, 76);
+  width: 110px;
+  border-radius: 1rem;
+}
+
+.flex-cart {
+  width: 130px;
+  text-align: center;
+}
+.flex-bottom {
+  border-radius: 0.5rem;
+  margin: auto;
+  width: 90px;
+  background: rgb(34, 190, 91);
+}
+
+.item-name {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.gap {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.item-price {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.remove-item {
+  background: rgb(255, 0, 0);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+.remove-icon {
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+
+.cart-stripe {
+  color: #fff;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.cart-total {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.cart-stripe-btn {
+  text-align: center;
+}
+
+.stripe-buy {
+  background: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 1rem;
+}
+.stripe-buy:hover {
+  background: rgb(26, 158, 26);
+  color: #fff;
+}
+@media screen and (max-width: 540px) {
+  .cart-main{
+    width: 100%;
+  }
+}

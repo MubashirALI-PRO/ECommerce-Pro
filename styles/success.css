@@ -1,0 +1,53 @@
+.success-wrapper {
+  position: fixed;
+  padding: 150px 5%;
+  background: rgb(0, 0, 0);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.icon {
+  background: white;
+  width: 300px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thank {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.description {
+  color: white;
+}
+.email-msg {
+  color: white;
+}
+.email {
+  color: white;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+.btn-success {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.2rem;
+}
+.btn-success:hover {
+  background: rgb(27, 153, 27);
+}
+
+@media screen and (max-width: 320px) {
+  .icon {
+    width: 95%;
+  }
+}
