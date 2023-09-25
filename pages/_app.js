@@ -1,4 +1,5 @@
 import Layout from "@/components/layout/page";
+import { Toaster } from 'react-hot-toast';
 import "@/styles/globals.css";
 import "@/styles/footerbanner.css";
 import "@/styles/hero.css";
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }) {
   return (
     <StateContext>
       <Layout>
+        <Toaster />
         <Component {...pageProps} />
       </Layout>
     </StateContext>
